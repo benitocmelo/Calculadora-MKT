@@ -31,8 +31,3 @@ export interface CalculatedMetrics {
   maxCPA3: number;
   minROAS3: number;
 }
-
-export interface ChatMessage {
-  role: 'user' | 'model';
-  text: string;
-}

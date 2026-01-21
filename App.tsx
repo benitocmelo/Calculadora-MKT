@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CalculatorInputs } from './components/CalculatorInputs';
 import { ResultsDisplay } from './components/ResultsDisplay';
-import { MentorChat } from './components/MentorChat';
 import { CalculatorState, CalculatedMetrics } from './types';
 
 const App: React.FC = () => {
@@ -129,9 +128,6 @@ const App: React.FC = () => {
           <ResultsDisplay state={state} metrics={metrics} onChange={handleInputChange} />
         </div>
       </div>
-
-      {/* Floating Chatbot */}
-      <MentorChat state={state} metrics={metrics} />
     </div>
   );
 };
